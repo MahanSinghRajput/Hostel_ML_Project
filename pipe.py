@@ -53,7 +53,7 @@ st.pyplot(fig)
 le = LabelEncoder()
 df['Hostel_Type'] = le.fit_transform(df['Hostel_Type'])
 
-X = df.drop('Hostel_Type', axis=1)
+X = df.drop(['Hostel_Type', 'Price'], axis=1)
 y = df['Hostel_Type']
 
 # Scaling (IMPORTANT)
